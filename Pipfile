@@ -1,0 +1,69 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# "pdfminer.six" = "*"
+# tensorflow = {version = "*", sys_platform = "!= 'darwin'"}
+click = "8.0.2"
+configparser = "*"
+cuda-python = "*"
+datetime = "*"
+filetype = "*"
+graphviz = "*"
+h5py = "*"
+imbalanced-learn = "*"
+install = "*"
+ipykernel = "*"
+ipywidgets = "*"
+jupyter = "*"
+keras = "*"
+keras-tqdm = "*"
+matplotlib = "*"
+mlflow = "*"
+numba = "*"
+numpy = "*"
+occrp-document-classifier = {editable = true, path = "."}
+opencv-python = "*"
+pandas = "*"
+path = "*"
+pdf2image = "*"
+pillow = "*"
+pipenv = "*"
+pipfile = "*"
+pydantic = "*"
+pydot = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-shutil = "*"
+pyyaml = "*"
+requests = "*"
+scikit-learn = "*"
+scipy = "*"
+seaborn = "*"
+setuptools = "*"
+sklearn = "*"
+tabulate = "*"
+tensorflow = "*"
+tensorflow-addons = "*"
+tensorflow-gpu = "*"
+tf-explain = "*"
+tifffile = "*"
+tqdm = "*"
+typer = {extras = ["all"], version = "*"}
+wheel = "*"
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+jupyter-black = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
