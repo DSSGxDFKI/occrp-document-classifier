@@ -4,16 +4,36 @@ This is a Python library to perform document classification for [OCCRP Aleph](al
 
 This project was developed during [Data Science for Social Good fellowship](https://sebastian.vollmer.ms/dssg/) in Kaiserslautern, Germany in the summer of 2022. The fellowship is funded by Rhineland Palatinate Technical University at Kaiserslautern-Landau, in cooperation with the German Research Centre for Artificial Intelligence (DFKI GmbH).
 
-## Quick Start
+# Table of Contents
+- [OCCRP Document Classifier](#occrp-document-classifier)
+- [Table of Contents](#table-of-contents)
+- [Quick Start](#quick-start)
+  - [1. Clone the repo](#1-clone-the-repo)
+  - [2. Select a root path](#2-select-a-root-path)
+  - [3. Create the folder structure using script](#3-create-the-folder-structure-using-script)
+  - [4. Install requirements](#4-install-requirements)
+  - [5. Run the CLI](#5-run-the-cli)
+- [Installation](#installation)
+  - [Python CLI](#python-cli)
+  - [Docker](#docker)
+  - [Docker GPU](#docker-gpu)
+- [Usage](#usage)
+  - [Prediction](#prediction)
+- [Mlflow](#mlflow)
+- [TODOs and ENHANCEMENTS](#todos-and-enhancements)
+- [Contributors](#contributors)
 
-### 1. Clone the repo
+
+# Quick Start
+
+## 1. Clone the repo
 
 ```bash
 git clone <repo-url>
 cd <repo-directory>
 ```
 
-### 2. Select a root path
+## 2. Select a root path
 
 In [config.py](./src/config.py):
 
@@ -31,7 +51,7 @@ You also need to replace that path in the Docker volumes defined in [run_gpu_mod
     -v /data/dssg/occrp/data/:/data/dssg/occrp/data/ \
 ```
 
-### 3. Create the folder structure using script
+## 3. Create the folder structure using script
 
 Once you selected a ROOT_PATH, all the subdirectories necessary to run the project can be created using the [init_data_structure.sh](./init_data_structure.sh) script passing the selected ROOT_PATH as an argument:
 
@@ -71,7 +91,7 @@ ROOT_PATH
 ```
 That's it! You just have setted all the necessary data to train models.
 
-### 4. Install requirements
+## 4. Install requirements
 
 ```bash
 # install the dependencies
@@ -81,7 +101,7 @@ pipenv install
 pipenv shell
 ```
 
-### 5. Run the CLI
+## 5. Run the CLI
 
 ```bash
 # check if the CLI is working
@@ -89,9 +109,9 @@ python src/main.py --help
 
 ```
 
-## Installation
+# Installation
 
-### Python CLI
+## Python CLI
 
 This projects uses Python 3.8 and [pipenv](https://pypi.org/project/pipenv/) to manage its dependencies. The list of requirements is available in the [Pipfile](./Pipfile). To install the requirements:
 
@@ -105,15 +125,15 @@ pipenv shell
 
 After this, you should be able to run any of the commands available in the [CLI](./docs/CLI.md).
 
-### Docker
+## Docker
 
 The [Dockerfile](./Dockerfile) allows to run the CLI in a Docker container with Python. See the [Docker README](./docs/Docker.md) to find instructions of how to use it.
 
-### Docker GPU
+## Docker GPU
 
 The [gpu.Dockerfile](./gpu.Dockerfile) allows to run the CLI in a Docker container with GPU out of the box using the [NVIDIA drivers](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow). See the [GPU README](./docs/GPU.md) to find instructions of how to use it.
 
-## Usage
+# Usage
  
 Basic command line usage:
 
@@ -123,7 +143,7 @@ python src/main.py [OPTIONS] COMMAND [ARGS]...
 
 More information about the commands available can be obtained using `python src/main.py --help` or in the [Command Line Interface README](./docs/CLI.md).
 
-### Prediction
+## Prediction
 
 This project comes with default trained classifier models to be used out of the box. To do that, just select a `INPUT_PATH` directory with documents to classify and run:
 
@@ -136,7 +156,7 @@ A json file with the results of the prediction will be saved in
 
 More details can be found in the [FAQ](./docs/FAQ.md)
 
-## Mlflow
+# Mlflow
 
 Find an experiment in the UI via the hash
 
@@ -149,7 +169,7 @@ the second one is the `run_id`.
 
 Find more information about how to use MLflow in the [Cheatsheet](./docs/Cheatsheet.md).
 
-## TODOs and ENHANCEMENTS
+# TODOs and ENHANCEMENTS
 
 We used Visual Studio Code for development and the extensions [ToDo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) by Gruntfuggly. We configured it in a way that distinguishes `TODO`s and `ENHANCEMENT`s. `TODO` for us means that important work is still required, `ENHANCEMENT` means that a certain improvement is desired but optional
 
@@ -169,3 +189,13 @@ To make this work as in our settings, install ToDo Tree in VS Code. Add this to 
         "ENHANCEMENT",
     ],
 ```
+
+# Contributors
+
+**Fellows**: José Miguel Cordero, Theresa Henn, Frederik H.
+
+**Technical Mentor(s)**: Diego Arenas
+
+**Project Manager**: Michael Brill
+
+**Project Partner**: Organized Crime and Corruption Reporting Project (OCCRP)

@@ -1,2 +1,22 @@
+[project]
+name = "occrp-document-classifier"
+description = "Document Classifier for Aleph' OCCRP"
+authors = [
+    {name = "José Miguel Cordero", email = "josemcorderoc@gmail.com"},
+    {name = "Theresa Henn", email = "theresahenn13@gmail.com"},
+    {name = "Frederik H."},
+]
+readme = "README.md"
+keywords = [
+    "aleph",
+    "deep learning",
+    "document classification",
+    "document classifier",
+    "investigative journalism",
+    "machine learning",
+    "occrp",
+]
+
+
 [tool.black]
 line-length = 125
