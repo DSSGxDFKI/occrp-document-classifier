@@ -2,7 +2,7 @@
 
 This is a Python library to perform document classification for [OCCRP Aleph](aleph.occrp.org/). It allows to train and test a classifier that can predict the type of a document.
 
-This project was developed during [Data Science for Social Good fellowship](https://sebastian.vollmer.ms/dssg/) in Kaiserslautern, Germany in the summer of 2022. The fellowship is funded by Rhineland Palatinate Technical University at Kaiserslautern-Landau, in cooperation with the German Research Centre for Artifficial Intelligence (DFKI GmbH).
+This project was developed during [Data Science for Social Good fellowship](https://sebastian.vollmer.ms/dssg/) in Kaiserslautern, Germany in the summer of 2022. The fellowship is funded by Rhineland Palatinate Technical University at Kaiserslautern-Landau, in cooperation with the German Research Centre for Artificial Intelligence (DFKI GmbH).
 
 ## Quick Start
 
