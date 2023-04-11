@@ -192,9 +192,9 @@ To make this work as in our settings, install ToDo Tree in VS Code. Add this to 
 
 # Contributors
 
-**Fellows**: José Miguel Cordero, Theresa Henn, Frederik H.
+**Fellows**: José Miguel Cordero, Theresa Henn, Frederik H., and José Sánchez Gómez
 
-**Technical Mentor(s)**: Diego Arenas
+**Technical Mentor**: Diego Arenas
 
 **Project Manager**: Michael Brill
 

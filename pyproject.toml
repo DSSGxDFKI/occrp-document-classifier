@@ -5,6 +5,7 @@ authors = [
     {name = "José Miguel Cordero", email = "josemcorderoc@gmail.com"},
     {name = "Theresa Henn", email = "theresahenn13@gmail.com"},
     {name = "Frederik H."},
+    {name = "José Sánchez Gómez", email = "jose.sgomez94@gmail.com"},
 ]
 readme = "README.md"
 keywords = [
