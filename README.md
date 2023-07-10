@@ -21,6 +21,7 @@ This project was developed during [Data Science for Social Good fellowship](http
   - [Prediction](#prediction)
 - [Mlflow](#mlflow)
 - [TODOs and ENHANCEMENTS](#todos-and-enhancements)
+- [UI](#UI)
 - [Contributors](#contributors)
 
 
@@ -189,6 +190,15 @@ To make this work as in our settings, install ToDo Tree in VS Code. Add this to 
         "ENHANCEMENT",
     ],
 ```
+# UI
+
+We built a graphical userinterface to for users to try out the model in a web browser: 
+
+![grafik](https://github.com/DSSGxDFKI/occrp-document-classifier/assets/61349553/abd816f8-a985-466e-bda9-ffce33fa8ecc)
+
+For more information, see [this repo](https://github.com/josemcorderoc/occrp-document-classifier-ui/). 
+
+A demo of the UI is hosted here: https://josemcorderoc.github.io/occrp-document-classifier-ui/ 
 
 # Contributors
 
